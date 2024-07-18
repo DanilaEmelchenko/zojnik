@@ -1,0 +1,7 @@
+@import '../../styles/functions';
+
+.layout {
+	padding: adapt(18px, 375px) adapt(16px, 375px);
+	position: relative;
+	height: 100%;
+}

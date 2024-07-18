@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+
+.block__interface {
+	position: fixed;
+	z-index: 25;
+	bottom: adapt(20px, 375px);
+	background-color: $color-green-standart;
+	padding: adapt(8px, 375px) adapt(16px, 375px);
+	border-radius: adapt(20px, 375px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: adapt(343px, 375px);
+
+	> .list {
+	}
+
+	> .image {
+		width: adapt(24px, 375px);
+		height: adapt(24px, 375px);
+	}
+}

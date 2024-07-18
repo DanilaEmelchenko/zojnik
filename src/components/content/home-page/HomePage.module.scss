@@ -1,0 +1,53 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.wrapper_homePage {
+	display: flex;
+	flex-direction: column;
+	gap: adapt(16px, 375px);
+}
+
+.block__methodPlate {
+	background-image: url('./image/plate_method.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: adapt(340px, 375px);
+	height: adapt(408px, 375px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: adapt(16px, 375px) adapt(17px, 375px) adapt(14px, 375px);
+}
+
+.block__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	> h2 {
+		font-size: 2rem;
+		font-family: 'SF-Pro-Display-Semibold';
+		color: $color-black-text;
+	}
+
+	> p {
+		text-align: center;
+		color: $color-black-light;
+		font-family: 'SF-Pro-Display-Regular';
+		font-size: 0.88rem;
+	}
+}
+
+.link {
+	padding: adapt(8px, 375px) adapt(24px, 375px) adapt(8px, 375px)
+		adapt(24px, 375px);
+	background-color: $color-black;
+	border-radius: adapt(30px, 375px);
+	color: $color-grey-button;
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 0.94rem;
+}

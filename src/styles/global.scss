@@ -1,0 +1,98 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto&display=swap');
+@import './variables';
+@import './fonts';
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	height: 100%;
+	color: $color-black;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body {
+	@media (max-width: 1920px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 1700px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 1500px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 1300px) {
+		font-size: 14px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 13px;
+	}
+
+	/*PK*/
+	@media (max-width: 1087px) {
+		font-size: 12px;
+	}
+	/*TABLET*/
+	@media (max-width: 991.98px) {
+		font-size: 22px;
+	}
+	/*MOBILE*/
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 667.98px) {
+		font-size: 19px;
+	}
+
+	@media (max-width: 467.98px) {
+		font-size: $fz_standart;
+	}
+
+	@media (max-width: 374.98px) {
+		font-size: 15px;
+	}
+}
+
+#root {
+	height: 100vh;
+}

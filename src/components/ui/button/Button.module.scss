@@ -1,0 +1,13 @@
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.button {
+	width: adapt(343px, 375px);
+	height: adapt(56px, 375px);
+	border-radius: adapt(16px, 375px);
+	// padding: adapt(10px, 375px) adapt(32px, 375px) adapt(10px, 375px)
+	// 	adapt(32px, 375px);
+	font-size: 1rem;
+	text-align: center;
+	font-family: 'SF-Pro-Display-Semibold';
+}

@@ -1,0 +1,59 @@
+@import '../../styles/functions';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+.wrapper_burger {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	// position: relative;
+	z-index: 300;
+	background-color: #fff;
+}
+
+.buttons__wrapper__openBurger {
+	margin-top: adapt(24px, 375px);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.openBurger__info {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.openBurger__text {
+	margin-bottom: adapt(4px, 375px);
+	text-align: center;
+	font-size: 0.8125rem;
+	font-family: 'SF-Pro-Display-Regular';
+}
+
+.openBurger__phone {
+	text-align: center;
+	font-size: 0.8125rem;
+	color: #21953c;
+}
+
+.openBurger__socials {
+	margin-top: adapt(12px, 375px);
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+}
+
+.openBurger__social {
+	border-radius: 100%;
+	padding: adapt(8px, 375px);
+	width: adapt(32px, 375px);
+	height: adapt(32px, 375px);
+	background-color: $color-black-btn;
+	text-align: center;
+}

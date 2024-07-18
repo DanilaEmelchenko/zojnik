@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.input__authorization {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	.input__block {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		border-radius: adapt(12px, 375px);
+		padding: adapt(4px, 375px) adapt(8px, 375px);
+		width: 100%;
+		height: adapt(48px, 375px);
+		background-color: $color-green-light;
+		border: adapt(1px, 375px) solid transparent;
+
+		&:focus-within {
+			border: adapt(1px, 375px) solid #8bc34a;
+			cursor: pointer;
+		}
+
+		.input__email,
+		.input__password {
+			font-size: 0.6875rem;
+			color: rgba(36, 41, 37, 0.4);
+		}
+
+		.input__email__add,
+		.input__password__add {
+			font-size: 1.0625rem;
+			color: $green-heading-text;
+			background-color: rgb(231 255 164 / 10%);
+			outline: none;
+		}
+	}
+
+	.input__block__error {
+		border: adapt(1px, 375px) solid red;
+	}
+}

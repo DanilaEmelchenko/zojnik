@@ -1,0 +1,7 @@
+@import '../../styles/functions';
+
+.block__content {
+	padding-bottom: adapt(100px, 375px);
+	padding-top: adapt(16px, 375px);
+	position: relative;
+}

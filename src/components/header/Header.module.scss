@@ -1,0 +1,17 @@
+@import '../../styles/functions';
+@import '../../styles/fonts';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: adapt(4px, 375px) 0px;
+	height: adapt(56px, 375px);
+	width: 100%;
+}
+
+.header__title {
+	font-family: 'SF-Pro-Display-Semibold';
+	font-weight: 590;
+	font-size: 1.375rem;
+}

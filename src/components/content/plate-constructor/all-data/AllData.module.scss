@@ -1,0 +1,47 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/functions';
+@import '../../../../styles/fonts';
+
+.wrapper_allData {
+	width: 100%;
+	border: 1px solid $color-green-standart;
+	padding: adapt(10px, 375px) adapt(17px, 375px) adapt(7px, 375px);
+
+	> .title {
+		font-size: 1rem;
+		font-family: 'SF-Pro-Display-Semibold';
+		color: $color_full_black;
+		margin-bottom: adapt(8px, 375px);
+	}
+
+	> .block__data {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// width: 100%;
+
+		> .block__kcal {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: adapt(4px, 375px);
+
+			> img {
+				width: adapt(40px, 375px);
+				height: adapt(40px, 375px);
+			}
+
+			> h4 {
+				font-family: 'SF-Pro-Display-Regular';
+				font-size: 0.76rem;
+				color: $color-black-light;
+			}
+
+			> p {
+				font-size: 0.94rem;
+				font-family: 'SF-Pro-Display-Semibold';
+				color: $color_full_black;
+			}
+		}
+	}
+}

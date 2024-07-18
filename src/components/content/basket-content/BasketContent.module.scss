@@ -1,0 +1,110 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.wrapper_basket {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	> .image {
+		margin-top: adapt(58px, 375px);
+		width: adapt(247px, 375px);
+		height: adapt(247px, 375px);
+		margin-bottom: adapt(20px, 375px);
+	}
+
+	> .title {
+		font-size: 1.17rem;
+		color: $color-black;
+		font-family: 'SF-Pro-Display-Semibold';
+		text-align: center;
+	}
+
+	> .error {
+		font-size: 0.88rem;
+		font-family: 'SF-Pro-Display-Regular';
+		color: $color-grey;
+		text-align: center;
+		max-width: adapt(270px, 375px);
+	}
+
+	> .link {
+		margin-top: adapt(160px, 375px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $color-black;
+		width: adapt(343px, 375px);
+		height: adapt(56px, 375px);
+		border-radius: adapt(16px, 375px);
+		color: #fff;
+		font-size: 1.0625rem;
+		font-family: 'SF-Pro-Display-Semibold';
+	}
+}
+
+.wrapper_basketProducts {
+	display: flex;
+	flex-direction: column;
+
+	> .button__delete {
+		align-self: flex-end;
+		margin-top: adapt(8px, 375px);
+		background-color: transparent;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	> .block__basket {
+		display: flex;
+		flex-direction: column;
+		gap: adapt(16px, 375px);
+		margin-bottom: adapt(25px, 375px);
+		margin-top: adapt(20px, 375px);
+	}
+
+	> .block__totalPrice {
+		margin-top: adapt(17px, 375px);
+		margin-bottom: adapt(24px, 375px);
+		color: $color_full_black;
+		font-family: 'SF-Pro-Display-Semibold';
+		display: flex;
+		flex-direction: column;
+		gap: adapt(8px, 375px);
+
+		> .title {
+			font-size: 1.17rem;
+		}
+
+		> .totalPrice__description {
+			> .row__count {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-size: 1rem;
+
+				> .title__count {
+					font-family: 'SF-Pro-Display-Regular';
+				}
+				> .count__price {
+				}
+			}
+			> .row__total {
+				margin-top: adapt(16px, 375px);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				> .title__total {
+				}
+				> .total__price {
+				}
+			}
+		}
+	}
+}

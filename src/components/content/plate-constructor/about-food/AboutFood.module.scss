@@ -1,0 +1,84 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/functions';
+@import '../../../../styles/fonts';
+
+.wrapper_aboutFood {
+	width: adapt(164px, 375px);
+	display: flex;
+	flex-direction: column;
+	gap: adapt(8px, 375px);
+}
+
+.block__rating {
+	display: flex;
+	align-items: center;
+	gap: adapt(4px, 375px);
+
+	> .rating {
+		padding: adapt(4px, 375px) adapt(12px, 375px);
+		border-radius: adapt(4px, 375px);
+		background-color: $color-green-standart;
+		font-family: 'Roboto', sans-serif;
+		color: #fff;
+	}
+
+	> .count {
+		color: $color_full_black;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+
+.title {
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 1rem;
+	color: $color_full_black;
+
+	&:first-letter {
+		text-transform: uppercase;
+	}
+}
+
+.block__calories {
+	display: flex;
+	flex-wrap: wrap;
+	// justify-content: center;
+	justify-content: space-between;
+	gap: adapt(4px, 375px);
+	color: $color-black-text;
+	font-family: 'SF-Pro-Display-Regular';
+	font-size: 0.64rem;
+
+	> .weight {
+		// margin-right: adapt(8px, 375px);
+	}
+
+	> .kcal {
+		> span {
+			color: $color-grey;
+		}
+	}
+
+	> .fullKcal {
+		// margin-left: adapt(8px, 375px);
+	}
+}
+
+.block__description {
+	color: $color_full_black;
+
+	> .title__description {
+		font-size: 0.94rem;
+		font-family: 'SF-Pro-Display-Semibold';
+	}
+
+	> .description {
+		font-family: 'SF-Pro-Display-Regular';
+		font-size: 0.88rem;
+	}
+}
+
+.price {
+	color: $color_full_black;
+	font-size: 1.17rem;
+	font-family: 'SF-Pro-Display-Semibold';
+}

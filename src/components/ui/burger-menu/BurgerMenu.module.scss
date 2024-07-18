@@ -1,0 +1,45 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+
+.button__burger {
+	width: adapt(24px, 375px);
+	height: adapt(30px, 375px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	.burger {
+		width: adapt(18.5px, 375px);
+		height: 1.5px;
+		border-radius: 1px;
+		background-color: $color-black;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: adapt(5px, 375px);
+			left: 0;
+			width: adapt(18.5px, 375px);
+			height: 1.5px;
+			border-radius: 1px;
+			background-color: $color-black;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: adapt(5px, 375px);
+			left: 0;
+			width: adapt(18.5px, 375px);
+			height: 1.5px;
+			border-radius: 1px;
+			background-color: $color-black;
+		}
+	}
+}

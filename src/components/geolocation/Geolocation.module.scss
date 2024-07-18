@@ -1,0 +1,11 @@
+@import '../../styles/functions';
+
+.block__location {
+	display: flex;
+	align-items: center;
+
+	> img {
+		width: adapt(24px, 375px);
+		height: adapt(24px, 375px);
+	}
+}

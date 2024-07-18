@@ -1,0 +1,152 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+@import '../../styles/fonts';
+
+.block__Dish {
+	justify-self: center;
+	background-color: $color-grey-cards;
+	width: adapt(164px, 375px);
+	height: adapt(288px, 375px);
+	display: flex;
+	flex-direction: column;
+	gap: adapt(8px, 375px);
+	border-top-left-radius: adapt(100px, 375px);
+	border-top-right-radius: adapt(100px, 375px);
+	border-bottom-left-radius: adapt(20px, 375px);
+	border-bottom-right-radius: adapt(20px, 375px);
+}
+
+.block__content {
+	display: flex;
+}
+
+.block__description {
+	padding-left: adapt(8px, 375px);
+	padding-bottom: adapt(8px, 375px);
+	// max-width: adapt(124px, 375px);
+	width: adapt(124px, 375px);
+	height: adapt(117px, 375px);
+	display: grid;
+	grid-template-rows: 0.2fr 1fr 0.2fr;
+}
+
+.block__image {
+	width: adapt(164px, 375px);
+	height: adapt(163px, 375px);
+	position: relative;
+}
+
+.image {
+	width: adapt(164px, 375px);
+	height: adapt(163px, 375px);
+}
+
+.block__info {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-left: adapt(3px, 375px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: adapt(8px, 375px);
+	width: 50%;
+	height: 100%;
+	border-top-right-radius: adapt(100px, 375px);
+	border-bottom-right-radius: adapt(100px, 375px);
+	border-top: 1px solid $color-lime;
+	border-bottom: 1px solid $color-lime;
+	border-right: 1px solid $color-lime;
+	background-color: $color-for-dish;
+}
+
+.leftSalads {
+	left: 0;
+	padding-left: 0px;
+	border-right: none;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: adapt(100px, 375px);
+	border-bottom-left-radius: adapt(100px, 375px);
+	padding-right: adapt(3px, 375px);
+}
+
+.block__calories {
+	display: flex;
+	align-items: center;
+	gap: adapt(5px, 375px);
+}
+
+.leftKcal {
+	justify-content: flex-end;
+}
+
+.block__color {
+	width: adapt(8px, 375px);
+	height: adapt(8px, 375px);
+	border-radius: 50%;
+}
+
+.block__data {
+	> .title {
+		font-size: 0.76rem;
+		line-height: 1.05;
+		font-family: 'SF-Pro-Display-Regular';
+		color: $color-black-light;
+	}
+
+	> .paragraph {
+		font-weight: 700;
+		font-size: 0.7rem;
+		line-height: 0.7;
+		color: $color-black;
+	}
+}
+
+.leftData {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	> .title {
+		text-align: right;
+	}
+}
+
+.calories {
+	font-size: 0.76rem;
+	font-family: 'SF-Pro-Display-Regular';
+	color: $color-grey;
+}
+
+.title {
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 0.88rem;
+	line-height: 1.23rem;
+	width: 120%;
+
+	&:first-letter {
+		text-transform: uppercase;
+	}
+}
+
+.price {
+	margin-top: adapt(3px, 375px);
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 1.17rem;
+}
+
+.button__plus {
+	margin-right: adapt(8px, 375px);
+	margin-bottom: adapt(8px, 375px);
+	background-color: $color-black;
+	border-radius: 50%;
+	width: adapt(28px, 375px);
+	height: adapt(28px, 375px);
+	align-self: end;
+
+	> img {
+		width: adapt(28px, 375px);
+		height: adapt(28px, 375px);
+	}
+}

@@ -1,0 +1,115 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+@import '../../../styles/animations';
+
+.wrapper_constructor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: adapt(40px, 375px);
+	// padding-top: adapt(16px, 375px);
+}
+
+.block__reload {
+	display: flex;
+	align-items: center;
+	gap: adapt(12px, 375px);
+}
+
+.button__reload {
+	background-color: $color-green-standart;
+	border-radius: adapt(4px, 375px);
+	width: adapt(184px, 375px);
+	height: adapt(30px, 375px);
+	color: $color-pale-green;
+	font-family: 'SF-Pro-Display-Semibold';
+}
+
+.block__plate {
+	width: 100%;
+	display: flex;
+	gap: adapt(10px, 375px);
+	transition: transform 0.6s ease-in-out;
+
+	> .block__left {
+		background-image: url('./image/plate_two.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 103%;
+		height: adapt(340px, 375px);
+		display: grid;
+
+		> .block__image {
+			width: adapt(80px, 375px);
+			margin-bottom: 5%;
+			margin-left: 2.5%;
+			align-self: end;
+			background-color: transparent;
+			position: relative;
+			z-index: 20;
+
+			> img {
+				width: adapt(50px, 375px);
+				height: adapt(50px, 375px);
+			}
+		}
+	}
+
+	> .block__right {
+		background-image: url('./image/plate_one.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 103%;
+		height: adapt(340px, 375px);
+		display: grid;
+
+		> .block__image {
+			width: adapt(80px, 375px);
+			margin-bottom: 5%;
+			margin-right: -4.5%;
+			align-self: end;
+			justify-self: flex-end;
+			background-color: transparent;
+			position: relative;
+			z-index: 21;
+
+			> img {
+				width: adapt(50px, 375px);
+				height: adapt(50px, 375px);
+			}
+		}
+	}
+}
+
+.food {
+	width: 100%;
+	height: adapt(340px, 375px);
+}
+
+.spin {
+	animation: spin 0.6s ease-in-out forwards;
+}
+
+.help {
+	position: absolute;
+	top: 43%;
+	left: 15%;
+	text-align: center;
+	color: $color-black-light;
+}
+
+.block__aboutFood {
+	display: flex;
+	flex-direction: column;
+	gap: adapt(25px, 375px);
+	width: 100%;
+}
+
+.block__plates {
+	display: flex;
+	gap: adapt(16px, 375px);
+	width: 100%;
+}

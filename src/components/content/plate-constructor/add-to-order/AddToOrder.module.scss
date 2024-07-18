@@ -1,0 +1,26 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/functions';
+@import '../../../../styles/fonts';
+
+.block__addToOrder {
+	width: 100%;
+}
+
+.block__slide {
+	display: flex;
+	gap: adapt(8px, 375px);
+	overflow-x: auto;
+	-ms-overflow-style: none; /* IE и Edge */
+	scrollbar-width: none; /* Firefox */
+
+	&::-webkit-scrollbar {
+		display: none; /* Chrome, Safari и Opera */
+	}
+}
+
+.title {
+	font-family: 'SF-Pro-Display-Semibold';
+	color: $color-black;
+	font-size: 1.17rem;
+	margin-bottom: adapt(8px, 375px);
+}

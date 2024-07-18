@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.block__input {
+  margin-top: adapt(8px, 375px);
+	width: 100%;
+	height: adapt(48px, 375px);
+	background-color: $color-green-light;
+	border-radius: adapt(8px, 375px);
+	padding: adapt(10px, 375px) adapt(8px, 375px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	> input {
+		width: adapt(270px, 375px);
+		height: 100%;
+		background-color: transparent;
+		outline: none;
+		font-size: 1rem;
+		font-family: 'SF-Pro-Display-Regular';
+		color: $color-black-light;
+	}
+}
+
+.button__voice {
+	background-color: transparent;
+}

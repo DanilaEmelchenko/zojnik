@@ -1,0 +1,38 @@
+@import '../../../styles/variables';
+@import '../../../styles/functions';
+@import '../../../styles/fonts';
+
+.button__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: adapt(16px, 375px);
+  padding: adapt(10px, 375px) adapt(32px, 375px);
+  width: 100%;
+  height: adapt(56px, 375px);
+  background-color: $color-grey-disable;
+  color: #fff;
+  font-size: 1.0625rem;
+  font-weight: 590;
+  font-family: 'SF-Pro-Display-Semibold', sans-serif;
+}
+
+.button__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  color: $color-black-text;
+  font-family: 'SF-Pro-Display-Regular', sans-serif;
+  border-radius: adapt(16px, 375px);
+  background-color: $color-grey-button;
+  padding: adapt(8px, 375px) 0 adapt(8px, 375px) adapt(8px, 375px);
+}
+
+.button__menu__text {
+  flex-grow: 1;
+}
+
+.button__profile__logout {
+  color: red;
+}

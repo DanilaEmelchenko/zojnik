@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+@import '../../styles/fonts';
+
+.block__slider {
+	display: flex;
+	gap: adapt(12px, 375px);
+	// width: 100%;
+	overflow-x: auto;
+	-ms-overflow-style: none; /* IE и Edge */
+	scrollbar-width: none; /* Firefox */
+
+	&::-webkit-scrollbar {
+		display: none; /* Chrome, Safari и Opera */
+	}
+}
+
+.block__category {
+	background-color: $color-green-light;
+	border-radius: adapt(12px, 375px);
+	padding: adapt(8px, 375px);
+	height: adapt(86px, 375px);
+	min-width: adapt(
+		90px,
+		375px
+	); //HELP: СТАВЛЮ ЧЕРЕЗ MIN ЧТОБЫ НЕ УМЕНЬШАЛО БЛОКИ КОГДА ВЫХОДИТ ЗА КРАЙ СТРАНИЦЫ
+	// height: 86px !important;
+	// min-width: 90px !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: $color-black;
+
+	> img {
+		width: adapt(48px, 375px);
+		height: adapt(48px, 375px);
+	}
+
+	> p {
+		font-family: 'SF-Pro-Display-Regular';
+		font-size: 1rem;
+		text-align: center;
+		color: $color-green-standart;
+	}
+}

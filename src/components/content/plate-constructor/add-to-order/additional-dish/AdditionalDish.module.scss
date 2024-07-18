@@ -1,0 +1,64 @@
+@import '../../../../../styles/variables';
+@import '../../../../../styles/functions';
+@import '../../../../../styles/fonts';
+
+.block__additionalDish {
+	background-color: $color-grey-cards;
+	width: adapt(140px, 375px);
+	height: adapt(233px, 375px);
+	display: flex;
+	flex-direction: column;
+	gap: adapt(8px, 375px);
+	border-top-left-radius: adapt(100px, 375px);
+	border-top-right-radius: adapt(100px, 375px);
+	border-bottom-left-radius: adapt(20px, 375px);
+	border-bottom-right-radius: adapt(20px, 375px);
+}
+
+.block__content {
+	display: flex;
+}
+
+.block__description {
+	padding-left: adapt(8px, 375px);
+	padding-bottom: adapt(8px, 375px);
+	max-width: adapt(124px, 375px);
+}
+
+.image {
+	width: adapt(140px, 375px);
+	height: adapt(139px, 375px);
+}
+
+.weight {
+	font-size: 0.76rem;
+	font-family: 'SF-Pro-Display-Regular';
+	color: $color-grey;
+}
+
+.title {
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 0.88rem;
+	line-height: 1.23rem;
+}
+
+.price {
+	margin-top: adapt(3px, 375px);
+	font-family: 'SF-Pro-Display-Semibold';
+	font-size: 1.17rem;
+}
+
+.button__plus {
+	margin-right: adapt(8px, 375px);
+	margin-bottom: adapt(8px, 375px);
+	background-color: $color-black;
+	border-radius: 50%;
+	width: adapt(28px, 375px);
+	height: adapt(28px, 375px);
+	align-self: end;
+
+	> img {
+		width: adapt(28px, 375px);
+		height: adapt(28px, 375px);
+	}
+}
