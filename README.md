@@ -8,3 +8,4 @@
 - **React Hooks**
 - **Prettier**
 - **CSS-Modules / SCSS**
+- **Axios**
